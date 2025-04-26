@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory,RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory} from 'vue-router'
 import App from './App.vue'
 import './index.css'
 
@@ -10,7 +10,7 @@ import ErrorTest from './components/ErrorTest.vue'
 import Error404 from './components/Error404.vue'
 
 // Define routes
-const routes: RouteRecordRaw[] = [
+const routes= [
   { path: '/', component: Todos },
   { path: '/todo/:id', component: IndividualTodo },
   { path: '/test-error', component: ErrorTest },
